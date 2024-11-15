@@ -1,0 +1,21 @@
+{% load django_vite %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}FreeWork Dashboard{% endblock title %}</title>
+    {% vite_hmr_client %}
+    {% vite_asset 'frontend/src/main.js' %}
+    <link rel="icon" href="{% vite_asset_url 'images/favicon.png' %}" type="image/png">
+
+    {% block head_styles %}{% endblock head_styles %}
+    {% block head_scripts %}{% endblock head_scripts %}
+
+</head>
+<body class="min-h-screen flex">
+    {% block content %}{% endblock content %}
+
+    <footer class="h-42 bg-black mt-auto"></footer>
+</body>
+</html>

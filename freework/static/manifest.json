@@ -1,0 +1,11 @@
+{
+  "freework/static_src/main.js": {
+    "file": "assets/main-BemSq9bl.js",
+    "name": "main",
+    "src": "freework/static_src/main.js",
+    "isEntry": true,
+    "css": [
+      "assets/main-Cht9Q9H2.css"
+    ]
+  }
+}
